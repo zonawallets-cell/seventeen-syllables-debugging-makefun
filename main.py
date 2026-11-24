@@ -19,7 +19,12 @@ HAIKU = (
 EXPECTED_SYLLABLES = (5, 7, 5)
 
 # Syllable counts for the words this haiku uses. Every word here is
-# one syllable except "breakpoint" (2) and "typo" (2).
+# one syllable except "breakpoint" (2) and "typo" (2). Verified line
+# by line against the 5-7-5 shape:
+#   "Breakpoint set at dawn"              -> 2+1+1+1 = 5
+#   "the log scrolls past, still no clue" -> 1+1+1+1+1+1+1 = 7
+#   "it was a typo"                       -> 1+1+1+2 = 5
+# Total 72 characters, well under the 200-character gate.
 SYLLABLES = {
     "breakpoint": 2,
     "typo": 2,
